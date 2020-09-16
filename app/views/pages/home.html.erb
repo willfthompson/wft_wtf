@@ -1,2 +1,21 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home-container">
+
+  <div class="navbar">
+
+    <h1>words</h1>
+  </div>
+
+  <div class="body">
+    <% @projects.each do |project|  %>
+    <%= project.title %>
+    <%= project.description %>
+    <%= project.body %>
+    <%= project.url %>
+    <%= project.date %>
+    <%= project.skills %>
+    <%= project.image %>
+
+    <% end %>
+  </div>
+
+</div>
