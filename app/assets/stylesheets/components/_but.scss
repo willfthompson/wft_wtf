@@ -1,0 +1,27 @@
+.but{
+  text-decoration: none;
+  mix-blend-mode: difference;
+  padding: 5px;
+  width:160px;
+  font-size: 18px;
+  border-radius: 3px;
+  text-align: center;
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+  &:hover{
+    a{
+      color: white;
+    }
+    color:white;
+    background-image: url(asset_path("waves.gif"));
+    text-decoration: none;
+  }
+  a{
+    color: black;
+    &:hover{
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,21 +1,24 @@
-<div class="home-container">
 
-  <div class="navbar">
+<%= render "shared/welcome" %>
+<%= render "shared/intro" %>
+<%= render "shared/projects" %>
+<%= render "shared/about" %>
+<%= render "shared/end" %>
 
-    <h1>words</h1>
+<!-- <div class="home-container blossom">
+  <div class="project-text">
+    <h1>Header Text</h1>
+    <p>About Text</p>
   </div>
-
-  <div class="body">
-    <% @projects.each do |project|  %>
-    <%= project.title %>
-    <%= project.description %>
-    <%= project.body %>
-    <%= project.url %>
-    <%= project.date %>
-    <%= project.skills %>
-    <%= project.image %>
-
-    <% end %>
-  </div>
-
 </div>
+
+
+<div class="home-container salmon">
+  <div class="project-text">
+    <h1>Header Text</h1>
+    <p>About Text</p>
+  </div>
+</div>
+<div class="break"></div>
+
+ -->

@@ -1,0 +1,21 @@
+<div class="home-container black resizeable">
+  <div class="end">
+    <div class="end-text">
+      <h1>Keep in Touch</h1>
+      <%= mail_to "will.f.thompson@gmail.com", subject: "Hi Will" do %>
+      <h4>email@email.com<i class="far fa-envelope"></i></h4>
+      <% end %>
+    </div>
+    <div class="end-socials">
+      <%= link_to 'https://twitter.com/willfthompson' do %>
+      <i class="fab fa-twitter"></i>
+      <% end %>
+      <%= link_to 'https://twitter.com/willfthompson' do %>
+      <i class="fab fa-linkedin-in"></i>
+      <% end %>
+      <%= link_to 'https://github.com/willfthompson' do %>
+      <i class="fab fa-github"></i>
+      <% end %>
+    </div>
+  </div>
+</div>

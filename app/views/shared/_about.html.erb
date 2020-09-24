@@ -1,0 +1,95 @@
+<a class="anchor" id="about"></a>
+<div class="resizeable home-container blossom scrollable">
+  <div class="about-content row">
+    <div class="about-text col-12 col-lg-6">
+      <h1>Hi! I'm Will, thanks for visiting</h1>
+      <p>After 7 years as a brand designer, I decided to make a shift in my career and became a front-end developer. I recently accomplished a coding bootcamp at Le Wagon Berlin.
+
+        I have a simple and bold approach to design and I am used to work with guidelines and design frameworks. I love clean, organized and reusable code.
+
+      When I am not coding or learning something new, I like doing personal illustration projects, creating my first professional font and spending family time with my wife and my son.</p>
+
+      <div class="but">
+        <%= link_to asset_path("colors.gif") do %>
+        <i class="fas fa-download"></i> Download CV
+        <% end %>
+      </div>
+    </div>
+    <div class="about-image col-12 center col-lg-6">
+      <%= image_tag "will_sepia.png" %>
+    </div>
+  </div>
+
+
+     <!--  <div class="row about-works">
+        <div class="about-work col-12 col-lg-6 ">
+          <h3>Experience</h3>
+          <div class="job">
+            <h4>2019 - 2020 Amsterdam</h4>
+            <p>OnePlus</p>
+            <p>Head of Marketing Projects</p>
+          </div>
+          <div class="job">
+            <h4>2018 - 2019 London</h4>
+            <p>OnePlus</p>
+            <p>Head of Communications, Europe</p>
+          </div>
+          <div class="job">
+            <h4>2017 - 2018 London</h4>
+            <p>Octopus Group</p>
+            <p>Senior Account Manager</p>
+          </div>
+          <div class="job">
+            <h4>2013 - 2017 London</h4>
+            <p>Dynamo PR</p>
+            <p>Account Manager</p>
+          </div>
+          <div class="job">
+            <h4>2010 - 2012 London</h4>
+            <p>Apple Inc.</p>
+            <p>Specialist Product Mentor</p>
+          </div>
+        </div>
+        <div class="about-work col-12 col-lg-6 ">
+          <h3>Education</h3>
+          <div class="job">
+            <h4>2020 - Amsterdam</h4>
+            <p>Le Wagon</p>
+            <p>Full-Stack Development Bootcamp</p>
+          </div>
+          <div class="job">
+            <h4>2007 - 2010 Bristol</h4>
+            <p>University of West England</p>
+            <p>BSc(Hons), Audio Technology</p>
+          </div>
+          <br>
+          <h3>One more thing</h3>
+          <div class="job">
+            <h4>2014 - Ulaanbataar</h4>
+            <p>I once drove a 20-year-old <%= link_to asset_path("skoda.jpg") do %>
+              Skoda
+              <% end %></p>
+              <p>from London To <%= link_to asset_path("finish.jpg") do %>
+              Mongolia
+              <% end %></p>
+            </div>
+          </div>
+        </div> -->
+         <div class="row">
+    <div class="about-skills col-12 ">
+      <% @skills.each do |skill| %>
+      <% case skill.genre %>
+      <% when "backend" %>
+      <div class="pill backend">
+        <% when "frontend" %>
+        <div class="pill frontend">
+          <% when "platform" %>
+          <div class="pill platform">
+            <% end %>
+            <p> <%= skill.name %> </p>
+          </div>
+          <% end %>
+        </div>
+      </div>
+      </div>
+    </div>

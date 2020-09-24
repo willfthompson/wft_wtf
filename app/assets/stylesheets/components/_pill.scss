@@ -1,0 +1,23 @@
+.pill{
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 5px 15px 5px 15px;
+  margin: 5px;
+}
+
+.pill p{
+  margin: auto;
+}
+
+
+.frontend{
+  background-color: $frontend;
+}
+
+.backend{
+  background-color: $backend;
+}
+
+.platform{
+  background-color: $platform;
+}
