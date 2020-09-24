@@ -1,21 +1,27 @@
-<div class="home-container black resizeable">
-  <div class="end">
-    <div class="end-text">
-      <h1>Keep in Touch</h1>
+<a class="anchor" id="contact"></a>
+<div class="end black">
+
+  <div class="end-socials">
+    <div class="end-social">
       <%= mail_to "will.f.thompson@gmail.com", subject: "Hi Will" do %>
-      <h4>email@email.com<i class="far fa-envelope"></i></h4>
+      <i class="far fa-envelope"></i>
       <% end %>
     </div>
-    <div class="end-socials">
+    <div class="end-social">
       <%= link_to 'https://twitter.com/willfthompson' do %>
       <i class="fab fa-twitter"></i>
       <% end %>
+    </div>
+    <div class="end-social">
       <%= link_to 'https://twitter.com/willfthompson' do %>
       <i class="fab fa-linkedin-in"></i>
       <% end %>
+    </div>
+    <div class="end-social">
       <%= link_to 'https://github.com/willfthompson' do %>
       <i class="fab fa-github"></i>
       <% end %>
     </div>
   </div>
 </div>
+

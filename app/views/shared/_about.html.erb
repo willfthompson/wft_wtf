@@ -1,24 +1,25 @@
 <a class="anchor" id="about"></a>
-<div class="resizeable home-container blossom scrollable">
-  <div class="about-content row">
-    <div class="about-text col-12 col-lg-6">
-      <h1>Hi! I'm Will, thanks for visiting</h1>
-      <p>After 7 years as a brand designer, I decided to make a shift in my career and became a front-end developer. I recently accomplished a coding bootcamp at Le Wagon Berlin.
+<div class="home-container blossom scrollable resizeable">
+    <div class="about-content row">
+      <div class="about-text col-12 col-lg-6">
+        <h1>Hi! I'm Will, thanks for visiting</h1>
+        <p>After 7 years as a brand designer, I decided to make a shift in my career and became a front-end developer. I recently accomplished a coding bootcamp at Le Wagon Berlin.
 
-        I have a simple and bold approach to design and I am used to work with guidelines and design frameworks. I love clean, organized and reusable code.
+          I have a simple and bold approach to design and I am used to work with guidelines and design frameworks. I love clean, organized and reusable code.
 
-      When I am not coding or learning something new, I like doing personal illustration projects, creating my first professional font and spending family time with my wife and my son.</p>
+        When I am not coding or learning something new, I like doing personal illustration projects, creating my first professional font and spending family time with my wife and my son.</p>
 
-      <div class="but">
-        <%= link_to asset_path("colors.gif") do %>
-        <i class="fas fa-download"></i> Download CV
-        <% end %>
+        <div class="but">
+          <%= link_to asset_path("colors.gif") do %>
+          <i class="fas fa-download"></i> Download CV
+          <% end %>
+        </div>
+      </div>
+      <div class="about-image col-12 center col-lg-6">
+        <%= image_tag "will_sepia.png" %>
       </div>
     </div>
-    <div class="about-image col-12 center col-lg-6">
-      <%= image_tag "will_sepia.png" %>
-    </div>
-  </div>
+
 
 
      <!--  <div class="row about-works">
@@ -75,21 +76,22 @@
             </div>
           </div>
         </div> -->
-         <div class="row">
-    <div class="about-skills col-12 ">
-      <% @skills.each do |skill| %>
-      <% case skill.genre %>
-      <% when "backend" %>
-      <div class="pill backend">
-        <% when "frontend" %>
-        <div class="pill frontend">
-          <% when "platform" %>
-          <div class="pill platform">
-            <% end %>
-            <p> <%= skill.name %> </p>
+        <div class="row">
+          <div class="about-skills col-12 ">
+            <% @skills.each do |skill| %>
+            <% case skill.genre %>
+            <% when "backend" %>
+            <div class="pill backend">
+              <% when "frontend" %>
+              <div class="pill frontend">
+                <% when "platform" %>
+                <div class="pill platform">
+                  <% end %>
+                  <p> <%= skill.name %> </p>
+                </div>
+                <% end %>
+              </div>
+            </div>
           </div>
-          <% end %>
         </div>
       </div>
-      </div>
-    </div>
