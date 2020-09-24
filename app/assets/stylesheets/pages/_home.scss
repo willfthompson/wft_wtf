@@ -1,1 +1,26 @@
 // Specific CSS for your home-page
+
+// General 100hw container w/borders
+.home-container{
+  padding-top: 70px;
+  height: 100vh;
+  width: 100vw;
+  border-top: 1vh solid black;
+  border-left: 1vh solid black;
+  border-right: 1vh solid black;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+// Colors
+
+.resizeable{
+  height: auto;
+  max-height: 100vh;
+  padding-bottom: 100px;
+}
+
+
+
+
+
+

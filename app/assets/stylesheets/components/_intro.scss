@@ -1,0 +1,37 @@
+
+.intro-text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+height: 80vh;
+   }
+
+.intro-text h1{
+  font-size: 66px;
+  font-weight: bolder;
+}
+
+
+.intro-text p{
+  line-height: 90%;
+  font-size: 74px;
+}
+
+
+@media (max-width: 1200px) {
+  .intro-text h1{
+    font-size: 64px;
+  }
+  .intro-text p{
+  font-size: 74px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro-text h1{
+    font-size: 24px;
+  }
+  .intro-text p{
+  font-size: 30px;
+  }
+}
