@@ -25,11 +25,10 @@ Skill.create!(name: "Github", genre: "platform") #17
 # Skill.create!(name: "Gatsby") #13
 # Add one line for one langauge/skill
 
-6.times do
 
-  puts "-----------------------------------------"
-  puts "Generating Boomzy"
-  puts "-----------------------------------------"
+puts "-----------------------------------------"
+puts "Generating Boomzy"
+puts "-----------------------------------------"
 
 # Add as many skills as you like
 skills = []
@@ -56,14 +55,14 @@ images << 'boomzy/boomzy5.png'
 
 project = Project.new
 project.title = "Boomzy"
-  project.description = "Rails project to connect skilled retirees with eager young learners"
-  project.body = "Boomzy was the final project of the Le Wagon coding bootcamp. The product was built in just 9 days and incorporates everything learned through the 9 week bootcamp. Key features include video-chat, live chat between users and a robust booking system."
-  project.date = '2020-09-01'
-  project.url = "http://boomzy.me"
-  project.repo = "https://github.com/Marielle-de-Jong/boomzy"
-  project.skill_ids = skills
-  project.image = "https://res.cloudinary.com/dx9ybadbm/image/upload/v1600245352/Screenshot_2020-09-16_at_10.33.49_cotsbc.png"
-  project.img_bank = images
+project.description = "Rails project to connect skilled retirees with eager young learners"
+project.body = "Boomzy was the final project of the Le Wagon coding bootcamp. The product was built in just 9 days and incorporates everything learned throughout the 9 week bootcamp. Key features include video-chat, live chat between users and a robust booking and review system."
+project.date = '2020-09-01'
+project.url = "http://boomzy.me"
+project.repo = "https://github.com/Marielle-de-Jong/boomzy"
+project.skill_ids = skills
+project.image = "https://res.cloudinary.com/dx9ybadbm/image/upload/v1600245352/Screenshot_2020-09-16_at_10.33.49_cotsbc.png"
+project.img_bank = images
 
 project.save!
 
@@ -71,4 +70,48 @@ puts "-----------------------------------------"
 puts "Finished Boomzy"
 puts "-----------------------------------------"
 
-end
+
+puts "-----------------------------------------"
+puts "Generating Wheelborrow"
+puts "-----------------------------------------"
+
+# Add as many skills as you like
+skills = []
+skills << Skill.find(1).id
+skills << Skill.find(2).id
+skills << Skill.find(3).id
+skills << Skill.find(5).id
+skills << Skill.find(6).id
+skills << Skill.find(12).id
+skills << Skill.find(14).id
+skills << Skill.find(17).id
+
+# Add as many images as you like
+
+images = []
+images << 'wheelborrow/wheelborrow1.png'
+images << 'wheelborrow/wheelborrow2.png'
+images << 'wheelborrow/wheelborrow3.png'
+images << 'wheelborrow/wheelborrow4.png'
+images << 'wheelborrow/wheelborrow5.png'
+
+
+
+project = Project.new
+project.title = "Wheelborrow"
+project.description = "Connect with your neighbours to borrow tools you need"
+project.body = "Wheelborrow was designed to make it easier to borrow tools from nearby people. There's no need to buy a drill, a pressure-washer or even a shovel just for one time use.
+
+Wheelborrow, features user profiles a booking system and robust search to ensure you get exactly the tools you need where you need them."
+project.date = '2020-08-01'
+project.url = "https://wheelborrow.herokuapp.com/"
+project.repo = "https://github.com/alexander101010/wheelborrow"
+project.skill_ids = skills
+project.image = "https://res.cloudinary.com/dx9ybadbm/image/upload/v1601039340/Screenshot_2020-09-25_at_15.07.27_pot5gy.png"
+project.img_bank = images
+
+project.save!
+
+puts "-----------------------------------------"
+puts "Finished Wheelborrow"
+puts "-----------------------------------------"
