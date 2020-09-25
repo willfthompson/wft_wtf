@@ -43,15 +43,29 @@ skills << Skill.find(12).id
 skills << Skill.find(13).id
 skills << Skill.find(17).id
 
-project = Project.create(
-  title: "Boomzy",
-  description: "Rails project to connect skilled retirees with eager young learners",
-  body: "Boomzy was the final project of the Le Wagon coding bootcamp. The product was built in just 9 days and incorporates everything learned through the 9 week bootcamp. Key features include video-chat, live chat between users and a robust booking system.",
-  date: '2020-09-01',
-  url: "www.boomzy.me",
-  skill_ids: skills,
-  image: "https://res.cloudinary.com/dx9ybadbm/image/upload/v1600245352/Screenshot_2020-09-16_at_10.33.49_cotsbc.png"
-  )
+# Add as many images as you like
+
+images = []
+images << 'boomzy/boomzy1.png'
+images << 'boomzy/boomzy2.png'
+images << 'boomzy/boomzy3.png'
+images << 'boomzy/boomzy4.png'
+images << 'boomzy/boomzy5.png'
+
+
+
+project = Project.new
+project.title = "Boomzy"
+  project.description = "Rails project to connect skilled retirees with eager young learners"
+  project.body = "Boomzy was the final project of the Le Wagon coding bootcamp. The product was built in just 9 days and incorporates everything learned through the 9 week bootcamp. Key features include video-chat, live chat between users and a robust booking system."
+  project.date = '2020-09-01'
+  project.url = "http://boomzy.me"
+  project.repo = "https://github.com/Marielle-de-Jong/boomzy"
+  project.skill_ids = skills
+  project.image = "https://res.cloudinary.com/dx9ybadbm/image/upload/v1600245352/Screenshot_2020-09-16_at_10.33.49_cotsbc.png"
+  project.img_bank = images
+
+project.save!
 
 puts "-----------------------------------------"
 puts "Finished Boomzy"
