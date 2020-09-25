@@ -1,0 +1,41 @@
+// General 100hw container w/borders
+.home-container{
+  padding-top: 70px;
+  height: 100vh;
+  width: 100vw;
+  border-top: 1vh solid black;
+  border-left: 1vh solid black;
+  border-right: 1vh solid black;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+// Colors
+
+// Allows 100% bg color space but split in two
+
+.resizeable{
+  height: auto;
+  padding-bottom: 100px;
+}
+
+.nopad{
+  padding-left: 0%;
+  padding-right: 0%;
+  padding-top: 0px;
+}
+
+
+.scrollable{
+  overflow: scroll;
+}
+
+.center{
+  display: flex;
+  align-items: center;
+}
+
+
+.bottom{
+  border-bottom: 1vh solid black;
+}
+
