@@ -28,24 +28,26 @@
     </div>
 
 
-        <div class="row">
-        <h4>Skills</h4>
-          <div class="about-skills col-12 ">
-            <% @skills.each do |skill| %>
-            <% case skill.genre %>
-            <% when "backend" %>
-            <div class="pill backend">
-              <% when "frontend" %>
-              <div class="pill frontend">
-                <% when "platform" %>
-                <div class="pill platform">
-                  <% end %>
-                  <p> <%= skill.name %> </p>
-                </div>
-                <% end %>
-              </div>
-            </div>
-          </div>
+    <div class="row">
+      <h4>Skills</h4>
+      <div class="about-skills col-12 ">
+        <% @skills.each do |skill| %>
+        <% case skill.genre %>
+        <% when "backend" %>
+        <div class="pill backend">
+          <p> <%= skill.name %> </p>
         </div>
+        <% when "frontend" %>
+        <div class="pill frontend">
+          <p> <%= skill.name %> </p>
+        </div>
+        <% when "platform" %>
+        <div class="pill platform">
+          <p> <%= skill.name %> </p>
+        </div>
+        <% end %>
+        <% end %>
       </div>
     </div>
+  </div>
+</div>
