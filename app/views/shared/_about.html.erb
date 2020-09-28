@@ -1,13 +1,23 @@
 <a class="anchor" id="about"></a>
-<div class="home-container blossom scrollable resizeable">
+<div class="home-container salmon scrollable center">
+  <div>
     <div class="about-content row">
       <div class="about-text col-12 col-lg-6">
         <h1>Hi! I'm Will, thanks for visiting</h1>
-        <p>After 7 years as a brand designer, I decided to make a shift in my career and became a front-end developer. I recently accomplished a coding bootcamp at Le Wagon Berlin.
+        <br>
+        <p>
+          I’ve been working in and around technology companies for the past decade, helping to effectively communicate and market how products impact users.
+        </p>
+        <br>
+        <p>
+          Now, I’ve taken some time out to improve on my software development skills and completed an intensive 3 month full-stack web development bootcamp in September. Combining these skills I want to develop and build products that solve user problems simply and clearly.
+        </p>
+        <br>
+        <p>
+          Outside of work, I enjoy cycling into the countryside around Amsterdam, video-games and quiz shows with a nice cup of tea.
+        </p>
 
-          I have a simple and bold approach to design and I am used to work with guidelines and design frameworks. I love clean, organized and reusable code.
 
-        When I am not coding or learning something new, I like doing personal illustration projects, creating my first professional font and spending family time with my wife and my son.</p>
 
         <div class="but">
           <%= link_to asset_path("colors.gif") do %>
@@ -77,6 +87,7 @@
           </div>
         </div> -->
         <div class="row">
+        <h4>Skills</h4>
           <div class="about-skills col-12 ">
             <% @skills.each do |skill| %>
             <% case skill.genre %>
@@ -95,3 +106,4 @@
           </div>
         </div>
       </div>
+    </div>

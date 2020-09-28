@@ -99,7 +99,7 @@ images << 'wheelborrow/wheelborrow5.png'
 
 project = Project.new
 project.title = "Wheelborrow"
-project.description = "Connect with your neighbours to borrow tools you need"
+project.description = "Connect with your neighbours to borrow tools you need, never buy a tool again"
 project.body = "Wheelborrow was designed to make it easier to borrow tools from nearby people. There's no need to buy a drill, a pressure-washer or even a shovel just for one time use.
 
 Wheelborrow, features user profiles a booking system and robust search to ensure you get exactly the tools you need where you need them."
@@ -107,7 +107,7 @@ project.date = '2020-08-01'
 project.url = "https://wheelborrow.herokuapp.com/"
 project.repo = "https://github.com/alexander101010/wheelborrow"
 project.skill_ids = skills
-project.image = "https://res.cloudinary.com/dx9ybadbm/image/upload/v1601039340/Screenshot_2020-09-25_at_15.07.27_pot5gy.png"
+project.image = "https://res.cloudinary.com/dx9ybadbm/image/upload/v1601289372/Screenshot_2020-09-28_at_12.35.57_rgkubk.png"
 project.img_bank = images
 
 project.save!

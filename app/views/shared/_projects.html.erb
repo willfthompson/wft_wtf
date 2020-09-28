@@ -1,32 +1,33 @@
 <a class="anchor" id="projects"></a>
-<div class="resizeable home-container ocean">
-  <div class="project-text">
-    <h1>Selected Projects</h1>
-    <p>Just some of the projects I'm most proud of working on. Click for more info on specific product features and development process.</p>
-  </div>
-  <div class="row">
-    <% @projects.each do |project| %>
-    <div class="col-sm-12 col-md-6 col-xl-4">
-      <div class="project-card">
-        <%= link_to project do %>
-        <div class="card-img">
-          <%= image_tag project.image %>
-      </div>
-
-        <div class="card-title">
-          <%= project.title %>
-        </div>
-        <div class="card-description">
-          <%= project.description %>
-        </div>
-        <div class="card-date">
-          <%= Date::MONTHNAMES[project.date.month]%> <%= project.date.year %>
-        </div>
-
-        </div>
+<div class="scrollable home-container ocean center">
+  <div>
+    <div class="project-text">
+      <h1>Selected Projects</h1>
     </div>
-    <% end %>
-    <% end %>
-  </div>
+    <div class="row all-projects">
+      <% @projects.each do |project| %>
+      <div class="col-sm-12 col-md-6 col-xl-6">
 
+        <div class="project-card">
+          <%= link_to project do %>
+          <div class="img-container">
+        <div class="card-img" style="background-image: url( <%= project.image %>);">
+          </div>
+          </div>
+          <div class="card-title">
+            <%= project.title %>
+          </div>
+          <div class="card-description">
+            <%= project.description %>
+          </div>
+          <div class="card-date">
+            <%= Date::MONTHNAMES[project.date.month]%> <%= project.date.year %>
+          </div>
+
+        </div>
+      </div>
+      <% end %>
+      <% end %>
+    </div>
   </div>
+</div>
