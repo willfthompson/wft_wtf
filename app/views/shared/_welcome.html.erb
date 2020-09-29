@@ -6,8 +6,10 @@
           <h1 class="reverse">WTF</h1>
         </div>
         <div class="welcomebutton">
-         <a id="welcomebut"><i class="far fa-arrow-alt-circle-up"></i></a>
-       </div>
-     </div>
-   </div>
- </div>
+          <%= link_to root_path(anchor: "intro"), id: :welcomebut do %>
+          <i class="far fa-arrow-alt-circle-down"></i>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -24,7 +24,6 @@ require("channels")
 
 // External imports
 import "bootstrap";
-import { initNavbar } from '../plugins/init_navbar';
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
@@ -32,7 +31,6 @@ import { initNavbar } from '../plugins/init_navbar';
   // Call your functions here, e.g:
   // initSelect2();
 
-initNavbar();
 
 });
 
