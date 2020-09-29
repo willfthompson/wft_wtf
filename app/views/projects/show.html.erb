@@ -4,7 +4,7 @@
     <!-- left side details -->
 
 
-    <div class="col-12 col-lg-6">
+    <div class="show-side col-12 col-lg-6">
       <div class="show-content flexcol left <%= @background %>">
        <div class="show-header">
          <h1><%= @project.title %></h1>
@@ -19,58 +19,60 @@
           <% case skill.genre %>
           <% when "backend" %>
           <div class="pill backend">
-            <% when "frontend" %>
-            <div class="pill frontend">
-              <% when "platform" %>
-              <div class="pill platform">
-                <% end %>
-                <p> <%= skill.name %> </p>
-              </div>
-              <% end %>
-            </div>
+            <p> <%= skill.name %> </p>
           </div>
-
-          <div class="show-links">
-            <div class="show-link">
-              <%= link_to @project.url, class: :but do %>
-              <i class="far fa-eye"></i> View Project
-              <% end %>
-            </div>
-            <div class="show-link">
-
-              <%= link_to @project.repo, class: :but do %>
-              <i class="fab fa-github"></i> Repository
-              <% end %>
-            </div>
-
-            <div class="show-link">
-
-              <%= link_to root_path(anchor: "projects"), class: :but do %>
-              <i class="fas fa-home"></i> More
-              <% end %>
-            </div>
-
-
+          <% when "frontend" %>
+          <div class="pill frontend">
+            <p> <%= skill.name %> </p>
           </div>
-        </div>
-      </div>
-
-
-
-      <!-- right side imagery -->
-
-      <div class="col-12 col-lg-6">
-        <div class="show-content right white scrollable">
-          <div class="show-img img-border">
-            <%= image_tag @project.image %>
+          <% when "platform" %>
+          <div class="pill platform">
+            <p> <%= skill.name %> </p>
           </div>
-          <% @project.img_bank.each do |image| %>
-          <div class="show-img img-border">
-            <%= image_tag image %>
-          </div>
+          <% end %>
           <% end %>
         </div>
       </div>
+
+      <div class="show-links">
+        <div class="show-link">
+          <%= link_to @project.url, class: :but do %>
+          <i class="far fa-eye"></i> View Project
+          <% end %>
+        </div>
+        <div class="show-link">
+
+          <%= link_to @project.repo, class: :but do %>
+          <i class="fab fa-github"></i> Repository
+          <% end %>
+        </div>
+
+        <div class="show-link">
+
+          <%= link_to root_path(anchor: "projects"), class: :but do %>
+          <i class="fas fa-home"></i> More
+          <% end %>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- right side imagery -->
+
+  <div class="show-side col-12 col-lg-6">
+    <div class="show-content right white scrollable">
+      <div class="show-img img-border">
+        <%= image_tag @project.image %>
+      </div>
+      <% @project.img_bank.each do |image| %>
+      <div class="show-img img-border">
+        <%= image_tag image %>
+      </div>
+      <% end %>
     </div>
   </div>
 </div>
