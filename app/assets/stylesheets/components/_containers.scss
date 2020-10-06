@@ -34,3 +34,22 @@
   border-bottom: 1vh solid black;
 }
 
+
+
+
+.white{
+  background-color: white !important;
+}
+
+.black{
+  background-color: black !important;
+  color: white !important;
+  transition: all 0.2s ease;
+}
+
+.dark-border{
+  border-top: 1vh solid white;
+  border-left: 1vh solid white;
+  border-right: 1vh solid white;
+}
+

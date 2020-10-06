@@ -6,6 +6,7 @@
   border-top: 1vh solid black;
 }
 
+
 .flexcol{
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@
 
 .left{
 
-  padding-top: 70px;
+  padding-top: 100px;
   padding-left: 10%;
   padding-right: 10%;
   border-left: 1vh solid black;
@@ -37,11 +38,16 @@
 @media (max-width: 990px) {
   .left{
     border-right: 1vh solid black;
-
+  padding-top: 300px;
   }
   .right{
     border-left: 1vh solid black;
+  }
+}
 
+@media (max-width: 400px) {
+  .left{
+  padding-top: 500px;
   }
 }
 
