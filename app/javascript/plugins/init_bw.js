@@ -7,10 +7,10 @@ const initBW = () =>{
   const show = document.querySelector('.show-content');
 
 
-  toggle.addEventListener('load', makeBW)
   toggle.addEventListener('click', makeBW)
 
-  function makeBW() {
+  function makeBW(e) {
+    e.preventDefault();
     if(show){
       show.classList.toggle('black');
     }
