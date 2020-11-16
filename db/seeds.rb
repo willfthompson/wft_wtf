@@ -115,3 +115,40 @@ project.save!
 puts "-----------------------------------------"
 puts "Finished Wheelborrow"
 puts "-----------------------------------------"
+
+puts "-----------------------------------------"
+puts "Generating WorldClock"
+puts "-----------------------------------------"
+
+# Add as many skills as you like
+skills = []
+skills << Skill.find(2).id
+skills << Skill.find(5).id
+skills << Skill.find(6).id
+skills << Skill.find(17).id
+
+# Add as many images as you like
+
+images = []
+images << 'awc/awc1.png'
+images << 'awc/awc2.png'
+
+
+
+project = Project.new
+project.title = "Analogue World Clock"
+project.description = "An experiment to see if you can clearly show multiple timezones on a single clock"
+project.body = "Timezones are confusing. With this experiement I aimed to combine modern clock features, like viewing multiple timezones,
+with a classic analogue clock form. I don't think this is going to usurp other tools, but it was a fun test."
+project.date = '2020-11-10'
+project.url = "https://willfthompson.github.io/analog_world_clock/"
+project.repo = "https://github.com/willfthompson/analog_world_clock"
+project.skill_ids = skills
+project.image = "https://res.cloudinary.com/dx9ybadbm/image/upload/v1605521694/awc2_afaqb1.png"
+project.img_bank = images
+
+project.save!
+
+puts "-----------------------------------------"
+puts "Finished Analogue World Clock"
+puts "-----------------------------------------"
