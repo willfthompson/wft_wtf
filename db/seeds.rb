@@ -164,7 +164,6 @@ puts "-----------------------------------------"
 # Add as many skills as you like
 skills = []
 skills << Skill.find(7).id
-skills << Skill.find(18).id
 
 
 # Add as many images as you like
