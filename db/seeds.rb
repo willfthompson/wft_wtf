@@ -21,6 +21,8 @@ Skill.create!(name: "NPM", genre: "platform") #14
 Skill.create!(name: "Yarn", genre: "platform") #15
 Skill.create!(name: "Git", genre: "platform") #16
 Skill.create!(name: "Github", genre: "platform") #17
+Skill.create!(name: "Raspberry Pi", genre: "hardware") #18
+
 # Skill.create!(name: "Vue") #12
 # Skill.create!(name: "Gatsby") #13
 # Add one line for one langauge/skill
@@ -151,4 +153,43 @@ project.save!
 
 puts "-----------------------------------------"
 puts "Finished Analogue World Clock"
+puts "-----------------------------------------"
+
+
+
+puts "-----------------------------------------"
+puts "Generating Toggl.Box"
+puts "-----------------------------------------"
+
+# Add as many skills as you like
+skills = []
+skills << Skill.find(7).id
+skills << Skill.find(18).id
+
+
+# Add as many images as you like
+
+images = []
+images << 'togglbox/togglbox1.jpg'
+images << 'togglbox/togglbox2.jpg'
+images << 'togglbox/togglbox3.jpg'
+images << 'togglbox/togglbox4.gif'
+
+
+
+project = Project.new
+project.title = "Toggl.Box"
+project.description = "Toggl.Box is a real-world implementation of the Toggl Track tool"
+project.body = "A hardware project using Raspberry Pi, designed to allow tracking of up to 12 projects with 4 separate tags. Select a tag by pressing one of the bottom row of buttons. Then start a timer by pressing any of the top 3 rows. Stop the timer by either pressing that button again, or starting a new timer with the same process."
+project.date = '2020-03-01'
+project.url = "https://github.com/willfthompson/toggl-box"
+project.repo = "https://github.com/willfthompson/toggl-box"
+project.skill_ids = skills
+project.image = "https://res.cloudinary.com/dx9ybadbm/image/upload/v1615201630/toggl_box_rain_sm_abuzjk.gif"
+project.img_bank = images
+
+project.save!
+
+puts "-----------------------------------------"
+puts "Finished Toggl.Box"
 puts "-----------------------------------------"
